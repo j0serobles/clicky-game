@@ -1,6 +1,7 @@
 import React    from "react";
 import IconCard from "../IconCard";
 import Navbar   from "../Navbar";
+import Footer   from "../Footer";
 import icons    from "../../icons.json";
 
 class Game extends React.Component { 
@@ -118,6 +119,7 @@ class Game extends React.Component {
           
             )) }
             </div>
+            <Footer/>
             </div>
         )
     }

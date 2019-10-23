@@ -1,6 +1,7 @@
 import React from "react";
 import StatusMessage from "../StatusMessage";
 import ScoreBoard    from "../ScoreBoard";
+import "./style.css";
 
 function Navbar(props) { 
 return( 
