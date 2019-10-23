@@ -3,9 +3,9 @@ import React from "react";
 
 function StatusMessage(props) { 
 return( 
-    <div>
-        <p>{props.statusMsg}</p>
-    </div>
+        <span className="navbar-text">
+          {props.statusMsg}
+        </span>
 ); 
 }
 

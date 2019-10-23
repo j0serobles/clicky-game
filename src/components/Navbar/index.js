@@ -5,15 +5,23 @@ import ScoreBoard    from "../ScoreBoard";
 function Navbar(props) { 
 return( 
 <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  
   <a className="navbar-brand" href="/"><i className="fas fa-mouse"></i>  <strong>Clicky-Game</strong></a>
-  <ul className="navbar-nav mr-auto">
-      <li className="nav-item">
-        <StatusMessage statusMsg={ props.statusMsg }/>
-      </li>
-      <li className="nav-item">
-        <ScoreBoard currentScore={props.currentScore} highScore={props.highScore}/>
-      </li>
-    </ul>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
+
+  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <div className="row container-fluid mx-auto">
+        <div className="col text-center">
+          <StatusMessage statusMsg={ props.statusMsg }/>
+        </div>
+        <div className="col text-right"> 
+          <ScoreBoard currentScore={props.currentScore} highScore={props.highScore}/>
+        </div>
+        </div>
+    </div>
+
 </nav>
 ); 
 }

@@ -104,7 +104,7 @@ class Game extends React.Component {
         return ( 
             <div className="container">
                 <Navbar statusMsg={this.state.statusMsg} currentScore={this.state.currentScore} highScore={this.state.highScore}/>
-              <div className="row">
+              <div className="row mt-3">
                 { this.state.icons.map( icon => (
                 <IconCard
                   processClick={ () => this.processClick(icon.id) }

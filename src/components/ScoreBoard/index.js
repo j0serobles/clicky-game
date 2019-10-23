@@ -2,9 +2,9 @@ import React from "react";
 
 function ScoreBoard(props) { 
 return( 
-  <div>
-      <p>Score: {props.currentScore}</p><p>High Score: {props.highScore}</p>
-  </div>
+  <span className="navbar-text">
+      Score: {props.currentScore} | High Score: {props.highScore}
+  </span>
 );
 }
 export default ScoreBoard;
